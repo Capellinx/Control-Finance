@@ -16,6 +16,15 @@ Bem-vindo ao README do projeto Control Finance! Este projeto visa fornecer uma s
 ## 🎨 Design
 O design do aplicativo foi desenvolvido para proporcionar uma experiência intuitiva e eficiente aos usuários. Os estilos foram criados utilizando CSS para garantir uma apresentação visual agradável e responsiva.
 
+## 💻 Como Usar
+- Clone este repositório em sua máquina local usando o seguinte comando:
+
+```bash
+git clone https://github.com/seu-usuario/control-finance.git
+```
+- Abra o arquivo index.html em seu navegador web.
+- Rode o live server
+
 ## ⚙️ Funcionalidades Principais
 - Registro de Valores: Registre suas transações financeiras, especificando o valor e o tipo (entrada ou saída).
 - Resumo Financeiro: Visualize um resumo financeiro que mostra a soma total dos valores registrados, diferenciando entre entradas e saídas.
