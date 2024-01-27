@@ -1,0 +1,58 @@
+@import url("./globalStyles.css");
+
+.filter__container {
+  margin-top: 6rem;
+}
+
+.filter__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter__title {
+  font-weight: var(--font-weight-2);
+  font-size: var(--font-size-2);
+  color: var(--color-grey-1);
+}
+
+.list__container {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+label {
+  display: flex;
+  gap: 1.25rem;
+}
+
+input[type="radio"] {
+  width: 90px;
+  height: 30px;
+}
+
+input[type="radio"]::after {
+  content: attr(value);
+  width: 90px;
+  height: 30px;
+  border-radius: var(--radius-1);
+  border: 0.2rem solid var(--color-grey-5);
+  background: var(--color-mode);
+  text-align: center;
+  line-height: 30px;
+
+  display: block;
+  cursor: pointer;
+  transition: var(--animation-duration);
+}
+
+input[type="radio"]:checked::after {
+  border: 0.2rem solid var(--color-brand-1);
+  color: var(--color-brand-1);
+}
+
+input[type="radio"]:hover::after {
+  border: 0.2rem solid var(--color-brand-1);
+  color: var(--color-brand-1);
+}
