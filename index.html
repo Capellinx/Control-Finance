@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link 
+    rel="stylesheet" 
+    type="text/css" 
+    href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Control Finance</title>
+    <link
+      rel="shortcut icon"
+      href="./src/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="description"
+      content="Control Finance - Seu controle financeiro"
+    />
+    <script
+      src="https://kit.fontawesome.com/e0caa30bc8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./src/styles/index.css" />
+  </head>
+  <body>
+    <header class="header__container">
+      <div class="header__content">
+        <h1 class="header__title">
+          <span class="header__title--marked">Control</span> Finance
+        </h1>
+        <button class="header__button--addValue">Registrar novo valor</button>
+      </div>
+    </header>
+    <main id="app">
+      <section class="filter__container">
+        <div class="filter__content">
+          <h2 class="filter__title">Resumo financeiro</h2>
+          <div class="filter__list">
+            <ul class="list__container">
+              <li class="list__item">
+                <label>
+                  <input 
+                  type="radio" 
+                  class="item__input" 
+                  name="type__change" 
+                  value="Todos" />
+                </label>
+              </li>
+              <li class="list__item">
+                <label>
+                  <input 
+                  type="radio" 
+                  class="item__input" 
+                  name="type__change" 
+                  value="Entrada" />
+                </label>
+              </li>
+              <li class="list__item">
+                <label>
+                  <input 
+                  type="radio" 
+                  class="item__input" 
+                  name="type__change" 
+                  value="Saídas" />
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <section class="sum__container">
+          <div class="sum__content">
+            <h3 class="sum__title">Soma dos Valores</h3>
+            <p class="sum__text">R$ 00,00</p>
+          </div>
+        </section>
+      </section>
+
+      <section class="valueCards__container">
+        <div class="valueCards__content">
+          <ul id="listTransitions" class="valueCards__list">
+            <li class="value__item">
+              <p class="list__price">R$ 40,00</p>
+              <div class="list__control">
+                <span class="list__type">Entrada</span>
+                <button class="list__button--remove">
+                  <i class="fa-solid fa-trash list__icon--trash"></i>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <div class="valueCards__content--empty exitBox">
+            <h3 class="empty__title">Nenhum valor cadastrado</h3>
+            <p class="empty__text">Registrar novo valor</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <dialog class="modal__controller">
+      <div class="modal__container">
+        <div class="modal__header">
+          <h2 class="modal__title">Registro de valor</h2>
+          <p class="modal__close">X</p>
+        </div>
+        <p class="modal__text">
+          Digite um valor e em seguida aperte no botão referente ao tipo de
+          valor
+        </p>
+        <form action="#" class="form__container">
+          <label for="valor">Valor</label>
+          <input 
+          class="insert__value"
+          type="text" 
+          pattern="\d{2}\d{2}"
+          placeholder="R$ 100"/>
+        </form>
+        <div class="modal__chose--value">
+          <p class="modal__text2">Tipo de valor:</p>
+          <ul class="list__container">
+              <li class="list__item">
+                <label>
+                  <input 
+                  id="entry"
+                  class="chose__value"
+                  type="radio" 
+                  name="type__change" 
+                  value="Entrada" />
+                </label>
+              </li>
+              <li class="list__item">
+                <label>
+                  <input 
+                  id="exit"
+                  class="chose__value"
+                  type="radio" 
+                  name="type__change" 
+                  value="Saída"/>
+                </label>
+              </li>
+        </div>
+        <div class="modal__close--insert">
+          <button class="close modal__close">Cancelar</button>
+          <button class="insert">Inserir valor</button>
+        </div>
+      </div>
+    </dialog>
+    <script 
+    src="./src/scripts/index.js" 
+    type="module"></script>
+    <script 
+    type="text/javascript"
+     src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  </body>
+</html>
