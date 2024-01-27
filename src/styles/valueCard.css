@@ -1,0 +1,92 @@
+@import url("./globalStyles.css");
+
+.valueCards__container {
+  margin-top: 4rem;
+}
+
+.value__item {
+  background-color: transparent;
+  border: 0.2rem solid var(--color-grey-5);
+  border-radius: var(--radius-1);
+  padding: 0.7rem 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.value__item + .value__item {
+  margin-top: 2.0rem;
+}
+
+.list__price {
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-2);
+}
+
+.list__type {
+  display: inline-block;
+  width: 70px;
+  text-align: center;
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-2);
+  background-color: var(--color-grey-4);
+  padding: 0.8rem;
+  margin-right: 3rem;
+  border-radius: var(--radius-1);
+}
+
+.list__button--remove {
+  padding: 0.8rem;
+  border-radius: var(--radius-1);
+  border: 0.2rem solid var(--color-grey-5);
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: var(--animation-duration);
+}
+
+.list__icon--trash {
+  color: #adb5bd;
+}
+
+.list__button--remove:hover {
+  background-color: rgb(190, 34, 34);
+}
+
+.list__icon--trash:hover {
+  color: #fff;
+}
+
+.valueCards__content--empty {
+  text-align: center;
+  border: 1px dashed var(--color-grey-3);
+  background-color: var(--color-grey-5);
+  border-radius: var(--radius-1);
+
+  cursor: pointer;
+  transition: var(--animation-duration);
+}
+
+.valueCards__content--empty:hover {
+  background-color: var(--color-grey-4);
+}
+
+.empty__title {
+  color: var(--color-grey-1);
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-1);
+  padding-block: 1.6rem;
+}
+
+.empty__text {
+  color: var(--color-grey-2);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-2);
+  padding-bottom: 1.6rem;
+}
+
+
+.exitBox {
+  display: none;
+}
