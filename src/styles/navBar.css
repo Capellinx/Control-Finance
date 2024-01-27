@@ -1,0 +1,38 @@
+@import url('./globalStyles.css');
+
+.header__container {
+  width: 100%;
+  background-color: var(--color-grey-5);
+  padding: 4.0rem;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-1);
+  color: var(--color-grey-1);
+}
+
+.header__title--marked {
+  color: var(--color-brand-2);
+}
+
+.header__button--addValue {
+  padding: 0.7rem 1.4rem;
+  color:#FFF;
+  background: var(--color-brand-1);
+  border: 1.5px solid var(--color-brand-1);
+  border-radius: var(--radius-1);
+  font-weight: var(--font-weight-1);
+  transition: var(--animation-duration);
+  cursor: pointer;
+}
+
+.header__button--addValue:hover {
+  background-color: var(--color-brand-2);
+}
